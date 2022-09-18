@@ -1,2 +1,2 @@
 # QR Code Generator JS
-hi friends :)
+hi friends :(
