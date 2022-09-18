@@ -1,2 +1,2 @@
-# qr-code-generator-js
+# QR Code Generator JS
 hi friends :)
