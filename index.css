@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(53, 146, 221);
+}
+
+.container{
+    background-color: white;
+    padding: 1.5em;
+    border-radius: .5rem;
+    height: 12.7rem;
+    max-height: 40rem;
+    width: 70%;
+    max-width: 25rem;
+    transition: height 200ms ease;
+}
+
+.container.active{
+    height: 40rem;
+}
+
+.title{
+    font-size: 1.3rem;
+    font-weight: 900;
+    color:rgb(35, 34, 34);
+}
+
+.desc{
+    font-size: .9rem;
+    font-weight: 500;
+    color: rgb(171, 163, 163);
+    margin-top: .5em;
+}
+
+#form{
+    margin-top: .5em;
+    display: flex;
+    flex-direction: column;
+}
+
+#qrInput{
+    font-size: .8rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    color: rgb(99, 97, 97);
+    outline: 0;
+    border: 1px solid rgba(96, 89, 89, 0.485);
+    padding: 1em;
+    border-radius: .2rem;
+    margin-top: .5em;
+}
+
+.form-btn{
+    margin-top: .5em;
+    outline: 0;
+    border: 0;
+    padding: 1em;
+    border-radius: .2rem;
+    margin-bottom: .5em;
+    font-size: .9rem;
+    color: white;
+    background-color: rgba(98, 181, 249, 0.722);
+}
+
+.form-btn:hover{
+    background-color: rgb(98, 181, 249);
+}
+
+.qr-result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: .5rem;
+    overflow: hidden;
+    padding: 2rem;
+    opacity: 0;
+    transition: opacity .5s .05s ease;
+}
+
+.container.active .qr-result{
+    opacity: 1;
+}
+
+#download-btn{
+    margin-top: 1em;
+    outline: 0;
+    border: 0;
+    padding: 1em;
+    border-radius: .2rem;
+    margin-bottom: .5em;
+    font-size: .9rem;
+    color: rgb(50, 48, 48);
+    background-color: rgba(249, 221, 98, 0.505);
+}
+
+#download-btn:hover{
+    background-color: rgb(249, 221, 98);
+}
+
+
