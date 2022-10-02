@@ -3,6 +3,7 @@ const generateBtn = document.querySelector(".form-btn");
 const qrInput = document.querySelector("#qrInput");
 const qrImg = document.getElementById("qr-img");
 const download = document.getElementById("download-btn");
+const ecc = document.getElementById("ecclvl");
 
 let toDownloadSrc = "";
 generateBtn.addEventListener("click", (e) => {
@@ -12,7 +13,7 @@ generateBtn.addEventListener("click", (e) => {
     if (!qrValue) return;
     generateBtn.innerText = "Generating your QR Code...";
     generateBtn.style.backgroundColor = "rgba(67, 212, 38, 0.722)";
-    let src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${qrValue}&ecc=M`;
+    let src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${qrValue}&ecc=${ecc.value}`;
     qrImg.src = src;
     toDownloadSrc = src;
     qrImg.addEventListener("load", () => {
