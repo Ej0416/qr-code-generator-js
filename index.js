@@ -12,7 +12,7 @@ generateBtn.addEventListener("click", (e) => {
     if (!qrValue) return;
     generateBtn.innerText = "Generating your QR Code...";
     generateBtn.style.backgroundColor = "rgba(67, 212, 38, 0.722)";
-    let src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${qrValue}`;
+    let src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${qrValue}&ecc=M`;
     qrImg.src = src;
     toDownloadSrc = src;
     qrImg.addEventListener("load", () => {
