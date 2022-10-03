@@ -30,14 +30,13 @@ label {
     padding: 1.5em;
     border-radius: 0.5rem;
     height: 15.7rem;
-    max-height: 40rem;
     width: 70%;
     max-width: 25rem;
     transition: height 200ms ease;
 }
 
 .container.active {
-    height: 40rem;
+    height: 42.5rem;
 }
 
 .title {
@@ -92,10 +91,6 @@ label {
     font-size: 0.9rem;
     color: white;
     background-color: rgba(98, 181, 249, 0.722);
-}
-
-.form-btn:hover {
-    background-color: rgb(98, 181, 249);
 }
 
 .qr-result {
